@@ -344,8 +344,8 @@ p { margin: 0 0 1em; }
 }
 .hero__subtitle strong { color: var(--text); }
 
-.hero__actions { display: inline-flex; flex-wrap: wrap; gap: 12px; margin: 26px 0; }
-.hero__actions .btn--quote { flex-basis: 100%; }
+.hero__actions { display: inline-grid; grid-template-columns: auto auto; gap: 12px; margin: 26px 0; }
+.hero__actions .btn--quote { grid-column: 1 / -1; }
 .btn--quote { background: var(--gradient-fire); color: #111; box-shadow: 0 8px 26px rgba(255, 106, 31, .3); }
 .btn--quote:hover { filter: brightness(1.08); }
 
@@ -574,6 +574,9 @@ p { margin: 0 0 1em; }
 .zona { display: grid; grid-template-columns: 1fr 1.1fr; gap: 28px 56px; align-items: start; }
 .zona__text p { color: var(--muted); }
 .zona .zona__title {
+  /* Mismo tamaño y fuente que "Servicios" (le gana a la regla .zona h2) */
+  font-family: var(--font-section);
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
   grid-column: 1 / -1;
   justify-self: center;
   text-align: center;
@@ -923,10 +926,13 @@ p { margin: 0 0 1em; }
   .section { padding: 72px 0; }
 }
 
+@media (max-width: 760px) {
+  .hero__actions { display: grid; grid-template-columns: 1fr; }
+  .hero__actions .btn { width: 100%; }
+}
+
 @media (max-width: 560px) {
   .grid--services, .features { grid-template-columns: 1fr; }
-  .hero__actions { display: flex; }
-  .hero__actions .btn { width: 100%; }
   .form { padding: 22px; }
   .footer__inner { grid-template-columns: 1fr; justify-items: center; text-align: center; }
   .footer__brand, .footer__nav { justify-self: center; text-align: center; }
