@@ -510,6 +510,11 @@ p { margin: 0 0 1em; }
   border-color: rgba(255, 154, 31, .35);
   box-shadow: var(--shadow);
 }
+/* Servicios de agua: hover celeste */
+.card--water:hover {
+  border-color: rgba(47, 180, 255, .45);
+  box-shadow: var(--shadow), 0 0 24px rgba(47, 180, 255, .15);
+}
 .card h3 { font-size: 1.1rem; }
 .card p { color: var(--muted); font-size: .95rem; margin: 0; }
 
