@@ -137,6 +137,7 @@
     const fields = Object.fromEntries(
       ["name", "service", "zone", "message", "urgent"].map((id) => [id, document.getElementById(id)])
     );
+    const REQUIRED = ["name", "service", "zone"];
 
     form.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -147,13 +148,14 @@
       const message = fields.message.value.trim();
       const urgent = fields.urgent.checked;
 
-      fields.name.classList.toggle("is-invalid", !name);
-      fields.service.classList.toggle("is-invalid", !service);
+      // Campos obligatorios: se marcan en rojo los que faltan y se enfoca el primero
+      const missing = REQUIRED.filter((id) => !fields[id].value.trim());
+      REQUIRED.forEach((id) => fields[id].classList.toggle("is-invalid", missing.includes(id)));
 
-      if (!name || !service) {
-        errorBox.textContent = "Completá tu nombre y elegí el tipo de servicio.";
+      if (missing.length) {
+        errorBox.textContent = "Completá tu nombre, elegí el servicio e indicá tu barrio o zona.";
         errorBox.hidden = false;
-        (!name ? fields.name : fields.service).focus();
+        fields[missing[0]].focus();
         return;
       }
       errorBox.hidden = true;
@@ -162,7 +164,7 @@
         urgent ? "🚨 *URGENCIA*" : null,
         `Hola GasistaYa, soy *${name}*.`,
         `Servicio: ${service}`,
-        zone ? `Zona: ${zone}` : null,
+        `Zona: ${zone}`,
         message ? `Detalle: ${message}` : null,
       ].filter(Boolean);
 
@@ -171,8 +173,8 @@
       if (thanks) showThanks();
     });
 
-    ["name", "service"].forEach((field) =>
-      fields[field].addEventListener("input", () => fields[field].classList.remove("is-invalid"))
+    REQUIRED.forEach((id) =>
+      fields[id].addEventListener("input", () => fields[id].classList.remove("is-invalid"))
     );
   }
 
