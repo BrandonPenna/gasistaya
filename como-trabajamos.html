@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cómo trabajamos · GasistaYa</title>
+  <meta name="description" content="Así trabajamos en GasistaYa: nos escribís, te respondemos y lo resolvemos. Guardia 24/7, gasista matriculado y presupuesto claro en Mar del Plata." />
+  <meta name="theme-color" content="#0d0f14" />
+
+  <!-- Open Graph (vista previa al compartir el link) -->
+  <meta property="og:title" content="Cómo trabajamos · GasistaYa" />
+  <meta property="og:description" content="Urgencias de plomería y gas en Mar del Plata. Atención 24 hs." />
+  <meta property="og:image" content="logo-gasistaya.webp" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/webp" href="logo-gasistaya.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@800;900&family=Sora:wght@600;700;800&family=Unbounded:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="brand" aria-label="GasistaYa, ir al inicio">
+        <span class="brand__logo"><img src="logo-gasistaya.webp" alt="" width="44" height="44" /></span>
+        <span class="brand__name">GASISTA<span>YA</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="index.html#servicios">Servicios</a>
+        <a href="como-trabajamos.html" class="is-active" aria-current="page">Cómo trabajamos</a>
+        <a href="trabajos-realizados.html">Trabajos realizados</a>
+        <a href="index.html#zona">Zona</a>
+        <a href="presupuesto.html" class="nav__cta nav__cta--mobile">Contactanos ahora</a>
+      </nav>
+
+      <a href="presupuesto.html" class="nav__cta header__cta">Contactanos ahora</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ CÓMO TRABAJAMOS ============ -->
+    <section class="section page-steps" id="como-trabajamos">
+      <div class="container">
+        <a class="back-link" href="index.html">
+          <svg class="back-link__icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Volver al inicio
+        </a>
+        <header class="section__head reveal">
+          <span class="eyebrow section-title">Cómo trabajamos</span>
+          <h2>Simple, rápido y sin vueltas</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">1</span>
+            <h3>Nos escribís</h3>
+            <p>Mandanos un WhatsApp con el problema y, si podés, una foto.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">2</span>
+            <h3>Te respondemos</h3>
+            <p>Coordinamos la visita y te damos un presupuesto claro.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">3</span>
+            <h3>Lo resolvemos</h3>
+            <p>Hacemos el trabajo, probamos todo y te dejamos tranquilo.</p>
+          </li>
+        </ol>
+
+        <div class="features">
+          <div class="feature reveal">
+            <strong>24/7</strong>
+            <span>Guardia todos los días, incluso feriados</span>
+          </div>
+          <div class="feature reveal">
+            <strong>Matrícula</strong>
+            <span>Gasista habilitado para trabajos de gas</span>
+          </div>
+          <div class="feature reveal">
+            <strong>Garantía</strong>
+            <span>Respaldamos cada trabajo realizado</span>
+          </div>
+          <div class="feature reveal">
+            <strong>Presupuesto</strong>
+            <span>Precio claro antes de empezar</span>
+          </div>
+        </div>
+
+        <div class="cta-row reveal">
+          <a class="btn btn--quote" href="presupuesto.html">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-doc"/></svg>
+            Pedir presupuesto
+          </a>
+          <a class="btn btn--whatsapp js-wa" href="https://wa.me/5492235054579" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Escribinos por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="brand__name footer__brand">GASISTA<span>YA</span></span>
+      <nav class="footer__nav" aria-label="Enlaces del pie">
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#zona">Zona</a>
+        <a href="presupuesto.html">Contacto</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> GasistaYa. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ============ ÍCONOS SVG ============ -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.45-5.02c0-5.2 4.24-9.44 9.45-9.44a9.4 9.4 0 0 1 9.44 9.45c0 5.2-4.24 9.44-9.45 9.44M20.08 3.92A11.27 11.27 0 0 0 12.05.6C5.8.6.7 5.7.7 11.95c0 2 .52 3.95 1.52 5.67L.6 23.4l5.9-1.55a11.33 11.33 0 0 0 5.54 1.41h.01c6.25 0 11.34-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.02"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></g></symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></g></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></g></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></g></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.4-.5-2-1-3-1.1-2.1-.2-4 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.2.4-2.3 1-3.3.3 1.6 1.1 2.8 2.5 2.8z"/></symbol>
+    <symbol id="i-heater" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><circle cx="12" cy="9" r="2"/><path d="M10 16h4M12 22v-2"/></g></symbol>
+    <symbol id="i-heat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3c-1 1.5 1 3 0 4.5S7 10 8 11.5M12 3c-1 1.5 1 3 0 4.5S11 10 12 11.5M16 3c-1 1.5 1 3 0 4.5S15 10 16 11.5"/><rect x="3" y="14" width="18" height="7" rx="2"/></g></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></g></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2.7 6.3 8.3a8 8 0 1 0 11.4 0z"/></symbol>
+    <symbol id="i-pipe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6v6h10v6H8a4 4 0 0 1-4-4z"/><path d="M20 8v10"/></g></symbol>
+    <symbol id="i-tank" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></g></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  </svg>
+
+  <script src="script.js"></script>
+</body>
+</html>
