@@ -456,7 +456,7 @@ p { margin: 0 0 1em; }
 .section--alt { background: var(--bg-alt); }
 
 .section__head { text-align: center; max-width: 640px; margin: 0 auto 56px; }
-.section__head h2, .zona h2, .contact h2 {
+.section__head h1, .section__head h2, .zona h2, .contact h1, .contact h2 {
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: clamp(1.8rem, 3.4vw, 2.5rem);
@@ -490,8 +490,11 @@ p { margin: 0 0 1em; }
 /* Subtítulo que acompaña a cada .section-title */
 #servicios .section__head h2,
 .zona__text h2,
+.page-contact h1,
 .page-contact h2,
+.page-steps .section__head h1,
 .page-steps .section__head h2,
+.soon h1,
 .soon h2 { font-size: clamp(1.35rem, 2.4vw, 1.75rem); }
 
 /* ---------- Tarjetas de servicios ---------- */
@@ -792,7 +795,7 @@ p { margin: 0 0 1em; }
 /* Versión compacta para que la página entre entera en la pantalla */
 .page-steps .section__head { margin-bottom: 44px; }
 .page-steps .eyebrow { margin-bottom: 18px; }
-.page-steps .section__head h2 { margin: 0; }
+.page-steps .section__head h1, .page-steps .section__head h2 { margin: 0; }
 .page-steps .steps,
 .page-steps .features { max-width: 920px; margin-inline: auto; }
 .page-steps .steps { margin-bottom: 28px; gap: 16px; }
@@ -829,7 +832,7 @@ p { margin: 0 0 1em; }
 }
 .soon__icon .icon { width: 30px; height: 30px; }
 .page-soon .eyebrow { display: block; margin-bottom: 14px; }
-.soon h2 { margin-bottom: 12px; }
+.soon h1, .soon h2 { margin-bottom: 12px; }
 .soon p { color: var(--muted); margin: 0 auto; max-width: 460px; }
 @media (max-width: 480px) {
   .soon { padding: 36px 20px; }
