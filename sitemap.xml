@@ -2,17 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gasistaya.com/</loc>
-    <lastmod>2026-10-28</lastmod>
-    <priority>1.0</priority>
+    <lastmod>2026-11-10</lastmod>
+  </url>
+  <url>
+    <loc>https://gasistaya.com/perdidas-de-gas.html</loc>
+    <lastmod>2026-11-10</lastmod>
+  </url>
+  <url>
+    <loc>https://gasistaya.com/calefones-y-termotanques.html</loc>
+    <lastmod>2026-11-10</lastmod>
+  </url>
+  <url>
+    <loc>https://gasistaya.com/estufas-y-calderas.html</loc>
+    <lastmod>2026-11-10</lastmod>
+  </url>
+  <url>
+    <loc>https://gasistaya.com/instalaciones-de-gas.html</loc>
+    <lastmod>2026-11-10</lastmod>
+  </url>
+  <url>
+    <loc>https://gasistaya.com/perdidas-de-agua.html</loc>
+    <lastmod>2026-11-10</lastmod>
+  </url>
+  <url>
+    <loc>https://gasistaya.com/destapaciones.html</loc>
+    <lastmod>2026-11-10</lastmod>
+  </url>
+  <url>
+    <loc>https://gasistaya.com/tanques-y-bombas.html</loc>
+    <lastmod>2026-11-10</lastmod>
   </url>
   <url>
     <loc>https://gasistaya.com/como-trabajamos.html</loc>
-    <lastmod>2026-10-28</lastmod>
-    <priority>0.6</priority>
+    <lastmod>2026-11-10</lastmod>
   </url>
   <url>
     <loc>https://gasistaya.com/presupuesto.html</loc>
-    <lastmod>2026-10-28</lastmod>
-    <priority>0.7</priority>
+    <lastmod>2026-11-10</lastmod>
   </url>
 </urlset>

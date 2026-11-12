@@ -1,0 +1,7 @@
+# Configuración local de herramientas (no forma parte del sitio)
+.claude/
+
+# Archivos que crea el sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
